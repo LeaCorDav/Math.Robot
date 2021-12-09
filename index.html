@@ -16,11 +16,24 @@
         <h3>Square</h3>
         <form>
             <label for="InputCuadrado">
-                What is the size of the edge?
+                What is the size of the edges?
             </label>
-            <input id="InputCuadrado" type="number" />
+            <input id="InputCuadrado" type="number" placeholder="Edge"/>
             <button type="button" onclick="calcularPerimetroCuadrado()">Calculate perimeter</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calculate area</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Rectangle</h3>
+        <form>
+            <label>
+                What are the sizes of the edges?
+            </label>
+            <input id="InputRect1" type="number" placeholder="Base"/>
+            <input id="InputRect2" type="number" placeholder="Height"/>
+            <button type="button" onclick="calcularPerimetroRectangulo()">Calculate perimeter</button>
+            <button type="button" onclick="calcularAreaRectangulo()">Calculate area</button>
         </form>
     </section>
 
@@ -45,12 +58,44 @@
     </section>
 
     <section>
+        <h3>Rhombus</h3>
+        <form>
+            <label>
+                What is the size of the edges?
+            </label>
+            <input id="InputLado" type="number" placeholder="Edge"/> 
+            <input id="InputAngulo" type="number" placeholder="Angle"/>          
+            <button type="button" onclick="calcularPerimetroRombo()">Calculate perimeter</button>
+            <button type="button" onclick="calcularAreaAngulo()">Calculate area with edge and angle</button>
+            <input id="InputDiagonal1" type="number" placeholder="Diagonal A"/>   
+            <input id="InputDiagonal2" type="number" placeholder="Diagonal B"/>   
+            <button type="button" onclick="calcularAreaDiagonal()">Calculate area with diagonals</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Rhomboid or Parallelogram</h3>
+        <form>
+            <label>
+                What are the size of the edges?
+            </label>
+            <input id="InputLadoA" type="number" placeholder="Side A"/> 
+            <input id="InputLadoB" type="number" placeholder="Side B"/>    
+            <input id="InputAnguloR" type="number" placeholder="Angle"/>      
+            <button type="button" onclick="calcularPerimetroRomboide()">Calculate perimeter</button>
+            <button type="button" onclick="calcularAreaAnguloRomboide()">Calculate area with edge and angle</button>
+            <input id="InputAltura" type="number" placeholder="Height"/>              
+            <button type="button" onclick="calcularAreaAlturaRomboide()">Calculate area with edge and height</button>
+        </form>
+    </section>
+
+    <section>
         <h3>Circle</h3>
         <form>
             <label for="InputCirculo">
                 What is the size of the radius?
             </label>
-            <input id="InputCirculo" type="number" />
+            <input id="InputCirculo" type="number" placeholder="Radius"/>
             <button type="button" onclick="calcularPerimetroCirculo()">Calculate perimeter</button>
             <button type="button" onclick="calcularAreaCirculo()">Calculate area</button>
         </form>

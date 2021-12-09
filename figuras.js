@@ -8,6 +8,16 @@ function areaCuadrado(arista){
 }
 
 
+// Rectangulo
+function perimetroRectangulo(arista1, arista2){
+    return (arista1 * 2) + (arista2 * 2);
+}
+
+function areaRectangulo(arista1, arista2){
+    return arista1 * arista2;
+}
+
+
 // Triangulo
 function perimetroTriangulo(arista1, arista2, base){    
     return parseInt(arista1) + parseInt(arista2) + parseInt(base);
@@ -28,6 +38,24 @@ function areaTrianguloEtc(arista1, arista2, base){
 }
 
 
+//Rombo
+function perimetroRombo(arista){
+    return arista * 4;
+}
+
+function areaRomboAngulo(arista, angulo){
+    const radianes = (angulo * Math.PI) / 180;      
+    return arista * arista * Math.sin(radianes);
+}
+
+function areaRomboDiagonal(diagonal1, diagonal2){
+    return  (diagonal1 * diagonal2) / 2;
+}
+
+
+// Romboide o paralelogramo
+
+
 //Circulo
 const diametroCirculo = (radio) => radio * 2;
 
@@ -41,8 +69,12 @@ function areaCirculo(radio){
 }
 
 
+//_____________________________
 //Conectar con HTML
+//_____________________________
 
+
+// Llamado a cuadrado
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const valor = input.value;
@@ -59,6 +91,24 @@ function calcularAreaCuadrado(){
     alert(area);
 }
 
+//Llamado a rectangulo
+function calcularPerimetroRectangulo(){
+    const input1 = document.getElementById("InputRect1").value;
+    const input2 = document.getElementById("InputRect2").value;
+
+    const perimetro = perimetroRectangulo(input1, input2);
+    alert(perimetro);
+}
+
+function calcularAreaRectangulo(){
+    const input1 = document.getElementById("InputRect1").value;
+    const input2 = document.getElementById("InputRect2").value;
+
+    const area = areaRectangulo(input1, input2);
+    alert(area);
+}
+
+// Llamado a triangulo
 function calcularPerimetroTriangulo(){
     const input1 = document.getElementById("InputTriangulo1");
     const input2 = document.getElementById("InputTriangulo2");
@@ -94,6 +144,31 @@ function calcularAreaTriangulo(){
     }
 }
 
+// Llamado a rombo
+function calcularPerimetroRombo(){
+    const input = document.getElementById("InputLado").value;
+    
+    const perimetro = perimetroRombo(input);
+    alert(perimetro);
+}
+
+function calcularAreaAngulo(){
+    const lado = document.getElementById("InputLado").value;
+    const angulo = document.getElementById("InputAngulo").value;
+
+    const area = areaRomboAngulo(lado, angulo);
+    alert(area);
+}
+
+function calcularAreaDiagonal(){
+    const d1 = document.getElementById("InputDiagonal1").value;
+    const d2 = document.getElementById("InputDiagonal2").value;
+
+    const area = areaRomboDiagonal(d1, d2);
+    alert(area);
+}
+
+// Llamado a circulo
 function calcularPerimetroCirculo(){
     const input = document.getElementById("InputCirculo");
     const valor = input.value;
