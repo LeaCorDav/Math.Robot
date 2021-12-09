@@ -7,7 +7,49 @@
     <title>Geometric Figures</title>
 </head>
 <body>
-    <h1>Geometric Figures</h1>
+    <header>
+        <h1>Math Robot</h1>
+        <h2>Calculate easier with us</h2>
+    </header>
+
+    <section>
+        <h3>Square</h3>
+        <form>
+            <label for="InputCuadrado">
+                What is the size of the edge?
+            </label>
+            <input id="InputCuadrado" type="number" />
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calculate perimeter</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calculate area</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Triangle</h3>
+        <form>
+            <label>
+                What are the sizes of the edges?
+            </label>
+            <input id="InputTriangulo1" type="number" placeholder="Side 1"/>
+            <input id="InputTriangulo2" type="number" placeholder="Side 2"/>
+            <input id="InputTriangulo3" type="number" placeholder="Base"/>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calculate perimeter</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calculate area</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Circle</h3>
+        <form>
+            <label for="InputCirculo">
+                What is the size of the radius?
+            </label>
+            <input id="InputCirculo" type="number" />
+            <button type="button" onclick="calcularPerimetroCirculo()">Calculate perimeter</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calculate area</button>
+        </form>
+    </section>
+
 
     <script src="./figuras.js"></script>
 </body>
