@@ -28,10 +28,16 @@
         <h3>Triangle</h3>
         <form>
             <label>
+                What is the triangle's type?
+            </label> 
+            <p> <input type="radio" name="check" value="eqis"/> Equilateral / Isosceles Triangle </p> 
+            <p> <input type="radio" name="check" value="rect"/> Right Triangle </p> 
+            <p> <input type="radio" name="check" value="otro"/> Other Triangle </p> 
+            <label>
                 What are the sizes of the edges?
-            </label>
+            </label>            
             <input id="InputTriangulo1" type="number" placeholder="Side 1"/>
-            <input id="InputTriangulo2" type="number" placeholder="Side 2"/>
+            <input id="InputTriangulo2" type="number" placeholder="Side 2 or height"/>
             <input id="InputTriangulo3" type="number" placeholder="Base"/>
             <button type="button" onclick="calcularPerimetroTriangulo()">Calculate perimeter</button>
             <button type="button" onclick="calcularAreaTriangulo()">Calculate area</button>
