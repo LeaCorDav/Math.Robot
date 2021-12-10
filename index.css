@@ -9,8 +9,7 @@ html{
 body{
     font-family: Tw Cen Mt; 
     margin: 0px;    
-    background: linear-gradient(to top, rgb(110, 100, 50) 0%, rgba(54, 110, 104) 100%);
-    
+    background: linear-gradient(to top, rgb(110, 100, 50) 0%, rgba(54, 110, 104) 100%);    
 }
 
 header{
@@ -37,14 +36,27 @@ header h1{
 }
 
 header h2{
-    color: #B0C6C3;        
+    color: #B0C6C3;  
+    margin-right: 5rem;      
 }
 
-.cuadrado{
+main{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.container_formas{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 60%;
+}
+
+.bloqueforma{
     position: relative;
     margin: 3rem;    
     width: 30rem;
-    height: 40rem;
+    height: 50rem;
     background-color: rgba(255, 255, 255, 0.3);
     color: beige;
     border-radius: 2.5rem;
@@ -54,11 +66,11 @@ header h2{
     justify-content: center;
     align-content:center;
     text-align: center;
-    border: #BA80B5 solid 3px;  
+    border: #BAA75B solid 3px;  
     box-shadow: 5px 10px rgba(0, 0, 0, 0.253);   
 }
 
-#img_cuadrado{
+.icono_figura{
     height: 5rem;
     width: 5rem;
     align-self: center;
@@ -67,13 +79,31 @@ header h2{
 h3{
     color: #6E643B;
     font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 form{
     display: block;    
 }
 
-input{        
+form label{
+    margin-bottom: 1rem;
+}
+
+form p{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+input[type=radio]{
+    height: 8px;
+}
+
+input[type=number]{        
+    margin-top: 0.5rem;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -87,7 +117,8 @@ input{
 }
 
 ::placeholder {
-    color: ghostwhite;
+    color: rgba(248, 248, 255, 0.75);
+    font-size: 1.5rem;
 }
 
 form > button{
@@ -100,5 +131,5 @@ form > button{
     color: white;
     font-weight: bold;
     border-radius: 1rem;  
-    
+    cursor: pointer;
 }
