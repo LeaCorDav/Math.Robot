@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometric Figures</title>
+    <title>Math.Robot</title>
+    <link href="./index.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Math Robot</h1>
+    <header>        
+        <div class="titulo">
+            <img id="logo" src="./imagenes/asistente-de-robot.png" alt="logo"/>
+            <h1>Math.Robot</h1>            
+        </div>
         <h2>Calculate easier with us</h2>
     </header>
 
-    <section>
+    <section class="cuadrado">
+        <img id="img_cuadrado" src="./imagenes/cuadrado.png"/>
         <h3>Square</h3>
         <form>
             <label for="InputCuadrado">
@@ -79,7 +84,7 @@
             <label>
                 What are the size of the edges?
             </label>
-            <input id="InputLadoA" type="number" placeholder="Side A"/> 
+            <input id="InputLadoA" type="number" placeholder="Side A or base"/> 
             <input id="InputLadoB" type="number" placeholder="Side B"/>    
             <input id="InputAnguloR" type="number" placeholder="Angle"/>      
             <button type="button" onclick="calcularPerimetroRomboide()">Calculate perimeter</button>
