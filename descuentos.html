@@ -11,19 +11,34 @@
         <h1>Percentages and Discounts</h1>
     </header>
     <section>
-        <h3>Calculate the final ammount you would have to pay</h3>
+        <h3>Calculate the final ammount you would have to pay for your product</h3>
         <form>
-            <label for="InputPrecio">Write the total ammount</label>
+            <label for="InputPrecio">Write the total cost</label>
             <input id="InputPrecio" type="number" placeholder="Total ammount"/>
             
             <label for="InputDescuento">Write the discount percentage</label>
-            <input id="InputDescuento" type="number" placeholder="Total discount"/>
+            <input id="InputDescuento" type="number" placeholder="Discount"/>
             
-            <button type="button" onclick="precioDescontado()">CALCULATE: Final Ammount</button>
+            <button type="button" onclick="precioDescontado()">CALCULATE: Final Cost</button>
         </form>
 
         <p id="Resultado"></p>
     </section>
+    <section>
+        <h3>Calculate the final price if you have any store's discount coupon</h3>
+        <form>
+            <label for="InputPrecio2">Write the total ammount</label>
+            <input id="InputPrecio2" type="number" placeholder="Total ammount"/>
+            
+            <label for="InputCupon">Write the discount coupon code</label>
+            <input id="InputCupon" type="text" placeholder="Coupon's code"/>
+            
+            <button type="button" onclick="precioDescontadoCupon()">CALCULATE: Final Ammount</button>
+        </form>
+
+        <p id="ResultadoCupon"></p>
+    </section>
+
 
     <script src="./descuentos.js"></script>
 </body>
