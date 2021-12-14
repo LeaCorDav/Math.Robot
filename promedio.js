@@ -51,25 +51,13 @@ function onclickMediaAritmetica(){
 // Inicializo variable
 var arrayNumerosMediana = [];
 
+//Declaro variable de mediana
+let mediana;
+
 // Funcion para ordenar numeros de menor a mayor
 function compararNumeros(a, b){
     return a - b;
 }
-
-//Añadiendo cantidades al Array del HTML
-function onclickSumarNumeroM(){
-    const inputNumero2 = Number(document.getElementById("InputNumero2").value);
-
-    const sumarInput = arraySumarNumeros(inputNumero2, arrayNumerosMediana);     
-    const resultadoArray = document.getElementById("ResultadoNumerosB");    
-    const arrayOrdenado = arrayNumerosMediana.sort(compararNumeros);
-
-    resultadoArray.innerText = "Numbers entered: " + arrayOrdenado; 
-    return sumarInput;         
-} 
-
-//Declarando variable para nuevo array ordenado
-let arrayOrdenadoNuevo = arrayNumerosMediana;
 
 // Funcion para validar si la cantidad de elementos del array es par o impar
 function esPar(cantidad){
@@ -86,23 +74,28 @@ function mitadLista(array){
     return mitadArray;
 }
 
-var mitadListadelArray = mitadLista(arrayOrdenadoNuevo);
+//Añadiendo cantidades al Array del HTML
+function onclickMedia(){
+    const inputNumero2 = Number(document.getElementById("InputNumero2").value);
+    const resultadoArray = document.getElementById("ResultadoNumerosB");
+    const resultadoMediana = document.getElementById("ResultadoMedia"); 
 
-//Declaro variable de mediana
-let mediana;
+    const sumarInput = arraySumarNumeros(inputNumero2, arrayNumerosMediana);  
+    const arrayOrdenado = arrayNumerosMediana.sort(compararNumeros);
+    var mitadListadelArray = mitadLista(arrayOrdenado);
 
-//Calculando Media del HTML
-function onclickMedia(){   
-    const resultadoMediana = document.getElementById("ResultadoMedia");     
-    if(esPar(arrayNumerosMediana.length)){
+    if(esPar(arrayOrdenado.length)){
         const elemento1 = parseInt(mitadListadelArray);
         const elemento2 = parseInt(mitadListadelArray - 1);
     
-        const promedio = calcularMediaAritmetica([elemento1, elemento2]);
+        const promedio = (arrayOrdenado[elemento1] + arrayOrdenado[elemento2]) / 2;
         mediana = promedio;        
     } else {
-        mediana = arrayNumerosMediana[mitadLista(arrayNumerosMediana)];        
+        const media = parseInt(mitadLista(arrayOrdenado));
+        mediana = arrayOrdenado[media];        
     };
 
+    resultadoArray.innerText = "Numbers entered: " + arrayOrdenado; 
     resultadoMediana.innerText = "Numbers entered: " + mediana;
-};
+    return sumarInput;         
+} 
