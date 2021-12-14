@@ -99,3 +99,37 @@ function onclickMedia(){
     resultadoMediana.innerText = "Numbers entered: " + mediana;
     return sumarInput;         
 } 
+
+//____________________
+// MODA
+//____________________
+function onclickModa(){
+    const inputNumeros = document.getElementById("InputNumero3").value;
+    const arrayInput = inputNumeros.split(" ");
+    const listaInputs = {};    
+
+    arrayInput.map(
+        function(elemento){
+            if(listaInputs[elemento]){
+                listaInputs[elemento] += 1;
+            } else{
+                listaInputs[elemento] = 1;
+            }        
+        }
+    );
+
+    const listaInputArray = Object.entries(listaInputs).sort(
+        function (valorAcumulado, nuevoValor){
+            return valorAcumulado[1] - nuevoValor[1];
+        }
+    );
+
+    const arrayModa = listaInputArray[listaInputArray.length - 1];
+    const moda = arrayModa[0];
+
+    const resultadoNumeros = document.getElementById("ResultadoNumerosC");
+    resultadoNumeros.innerText = "Numbers entered: " + arrayInput;
+
+    const resultadoModa = document.getElementById("ResultadoModa");
+    resultadoModa.innerText = "The mode is: " + moda;   
+}
