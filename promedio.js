@@ -68,7 +68,7 @@ function esPar(cantidad){
     }
 }
 
-//Para averiguar los valores medios del array (ESTA APARECIEDO NAN ACA)
+//Para averiguar los valores medios del array 
 function mitadLista(array){
     const mitadArray = array.length / 2;
     return mitadArray;
