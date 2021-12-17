@@ -6,7 +6,193 @@ html{
     font-size: 62.5%;
 }
 
-@media (min-width: 631px){
+@media (max-width: 979px){
+    body {
+        height: 100vh;
+        font-family: Tw Cen Mt; 
+        margin: 0px;    
+        width: 100%;
+        header {        
+            background-color: #233B38;
+            height: 150px;  
+            width: 100%;  
+            font-family: BankGothic Md BT;   
+            .titulo{
+                display: flex;    
+                align-items: center;
+
+                h1 {
+                    color: azure;   
+                    font-size: 4rem; 
+                }
+
+                #logo {
+                    height: 100px;                    
+                }
+            }
+            
+            h2 {
+                color: #B0C6C3;                  
+                margin-left: 10rem;
+                margin-top: -3rem;
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;            
+            align-items: center;           
+            background: rgb(110,100,50);
+            background: linear-gradient(0deg, rgba(110,100,50,1) 0%, rgba(35,59,56,1) 100%);
+            .titulo_pagina{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                img {
+                    height: 50px;
+                    margin-top: 15px;                    
+                }
+                h1 {
+                    font-size: 7.5vw;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                .bloque{
+                    position: relative;
+                    margin: 3rem;    
+                    width: 30rem;
+                    height: 55rem;
+                    background: rgba(0, 0, 0, 0.35);
+                    padding: 3rem;
+                    border-radius: 2.5rem;
+                    font-size: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content:center;
+                    text-align: center;
+                    border: #BAA75B solid 3px;  
+                    box-shadow: 5px 10px rgba(0, 0, 0, 0.253); 
+                    h3{
+                        color: white;
+                    }
+                    form {                        
+                        color: beige;                        
+                        label {
+                            display: block;
+                            margin-top: 10px;
+                            font-size: 1.6rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                        }
+                        input{        
+                            margin-top: 0.5rem;
+                            border-top: 0px;
+                            border-left: 0px;
+                            border-right: 0px;
+                            font-size: 14px;
+                            border-radius: 1rem;
+                            height: 5rem;
+                            width: 80%;
+                            background-color: rgba(131, 131, 131, 0.3);
+                            color: beige;
+                            text-align: center;
+                            ::placeholder {
+                                color: rgba(248, 248, 255, 1);
+                                font-size: 1.5rem;
+                            }
+                        }
+                        button{
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                            border-style: none;
+                            height: 5rem;
+                            width: 80%;
+                            background-color: #6E643B;
+                            color: white;
+                            font-weight: bold;                            
+                            border-radius: 1rem;  
+                            cursor: pointer;
+                        }
+                    }
+                    p {
+                        color: white; 
+                        padding-left: 1rem;
+                        padding-right: 1rem;                      
+                    }
+                } 
+                .bloque_dsc {
+                    margin-top: 0;                      
+                    width: 30rem; 
+                    text-align: center;  
+                    margin-left: auto;   
+                    margin-right: auto;  
+                    margin-bottom: 10rem;        
+                    h3{
+                        color: white;
+                        font-size: 2rem;
+                        margin-top: 0%;
+                        margin-bottom: 1rem;
+                        text-align: center;
+                    }
+                    div {  
+                        
+                        border: #BAA75B solid 1.5px;
+                        border-radius: 1.5rem; 
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        color:beige;
+                        h4 {                            
+                            text-align: center;
+                            font-size: large;
+                            margin-bottom: 0;
+                        }
+                        p {                           
+                            text-align: center;
+                            font-size: medium;
+                            margin-top: 10px;
+                        }
+                    }
+                }           
+            }
+        }
+
+        footer {
+            background-color: #6E643B;             
+            width: 100vw;        
+            color: beige;
+            display: flex; 
+            align-items: center;
+            justify-content:space-evenly;
+            font-size: 1.2rem;
+            flex-direction: column;
+            ul{
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: beige;
+                    font-weight: normal;
+                    li{
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        list-style: none
+                    }
+                } 
+                li{
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    list-style: none
+                }           
+            }
+        }
+    }
+}
+
+@media (min-width: 980px){
     body {
         height: 100vh;
         font-family: Tw Cen Mt; 
@@ -39,6 +225,7 @@ html{
                 margin-right: 3rem; 
             }
         }
+
         main {
             display: flex;
             flex-direction: column;            
@@ -56,18 +243,16 @@ html{
                     font-size: 50px;
                 }
             }
-            .container_formas {
-                display: flex;
-                flex-wrap:wrap;                
-                justify-content: center;
-                width: 80%;
-                .bloqueforma {
+            div {
+                display: flex;      
+                             
+                .bloque{
                     position: relative;
                     margin: 3rem;    
                     width: 30rem;
                     height: 55rem;
                     background: rgba(0, 0, 0, 0.35);
-                    color: beige;
+                    padding: 3rem;
                     border-radius: 2.5rem;
                     font-size: 2rem;
                     display: flex;
@@ -77,198 +262,19 @@ html{
                     text-align: center;
                     border: #BAA75B solid 3px;  
                     box-shadow: 5px 10px rgba(0, 0, 0, 0.253); 
-                    .icono_figura {
-                        height: 75px;
-                        width: 75px;
-                        align-self: center;
-                    }  
                     h3{
-                        color: #6E643B;
-                        font-size: 3rem;
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
+                        color: white;
                     }
-                    form{
-                        display: block; 
-                        label{
-                            margin-bottom: 1rem;
-                        }   
-                        p{
-                            margin-top: 0.25rem;
-                            margin-bottom: 0.25rem;
-                            font-size: 1.5rem;
-                            color: white;
+                    form {                        
+                        color: beige;                        
+                        label {
+                            display: block;
+                            margin-top: 10px;
+                            font-size: 1.6rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
                         }
-                        input[type=radio]{
-                            height: 8px;
-                        }
-                        input[type=number]{        
-                            margin-top: 0.5rem;
-                            border-top: 0px;
-                            border-left: 0px;
-                            border-right: 0px;
-                            font-size: 14px;
-                            border-radius: 1rem;
-                            height: 5rem;
-                            width: 50%;
-                            background-color: rgba(131, 131, 131, 0.3);
-                            color: beige;
-                            text-align: center;
-                            ::placeholder {
-                                color: rgba(248, 248, 255, 1);
-                                font-size: 1.5rem;
-                            }
-                        }
-                        button{
-                            margin-top: 0.25rem;
-                            margin-bottom: 0.25rem;
-                            border-style: none;
-                            height: 3rem;
-                            width: 50%;
-                            background-color: #6E643B;
-                            color: white;
-                            font-weight: bold;
-                            border-radius: 1rem;  
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
-        }
-        
-        footer {
-            background-color: #6E643B;
-            height: 100px;  
-            width: 100%;        
-            color: beige;
-            display: flex; 
-            align-items: center;
-            justify-content:space-evenly;
-            font-size: 1.2rem;
-
-            ul{
-                text-align: center;
-                a {
-                    text-decoration: none;
-                    color: beige;
-                    font-weight: normal;
-                    li{
-                        margin-top: 0.5rem;
-                        margin-bottom: 0.5rem;
-                        list-style: none
-                    }
-                } 
-                li{
-                    margin-top: 0.5rem;
-                    margin-bottom: 0.5rem;
-                    list-style: none
-                }           
-            }
-        }
-    }
-}
-
-@media (max-width: 630px){
-    body {
-        height: 100vh;
-        font-family: Tw Cen Mt; 
-        margin: 0px;    
-        width: 100vw;  
-        header {        
-            background-color: #233B38;
-            height: 150px;  
-            width: 100%;  
-            font-family: BankGothic Md BT;   
-            .titulo{
-                display: flex;    
-                align-items: center;
-
-                h1 {
-                    color: azure;   
-                    font-size: 4rem; 
-                }
-
-                #logo {
-                    height: 100px;
-                }
-            }
-            
-            h2 {
-                color: #B0C6C3;                  
-                margin-left: 10rem;
-                margin-top: -3rem;
-            }
-        }
-        main {
-            display: flex;
-            flex-direction: column;            
-            align-items: center;                   
-            background: rgb(110,100,50);
-            background: linear-gradient(0deg, rgba(110,100,50,1) 0%, rgba(35,59,56,1) 100%);
-            .titulo_pagina{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                img {
-                    height: 50px;
-                    margin-top: 15px;                    
-                }
-                h1 {
-                    font-size: 7.5vw;
-                    margin-top: 10px;
-                }
-            }
-            .container_formas {
-                display: flex;
-                flex-wrap: wrap;
-                align-content: space-between;
-                width: 80%;
-                .bloqueforma {
-                    position: relative;
-                    margin: 3rem;   
-                    padding-right: 3rem; 
-                    padding-left: 3rem; 
-                    padding-top: 4rem;
-                    padding-bottom: 4rem;
-                    width: 30rem;                    
-                    background: rgba(0, 0, 0, 0.35);
-                    color: beige;
-                    border-radius: 2.5rem;
-                    font-size: 2rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-content:center;
-                    text-align: center;
-                    border: #BAA75B solid 3px;  
-                    box-shadow: 5px 10px rgba(0, 0, 0, 0.253); 
-                    .icono_figura {
-                        height: 75px;
-                        width: 75px;
-                        align-self: center;
-                    }  
-                    h3{
-                        color: #6E643B;
-                        font-size: 3rem;
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                    }
-                    form{
-                        display: block; 
-                        label{
-                            display: block; 
-                            margin-bottom: 1rem;
-                        }   
-                        p{
-                            margin-top: 0.25rem;
-                            margin-bottom: 0.25rem;
-                            font-size: 1.5rem;
-                            color: white;
-                        }
-                        input[type=radio]{
-                            height: 8px;
-                        }
-                        input[type=number]{        
+                        input{        
                             margin-top: 0.5rem;
                             border-top: 0px;
                             border-left: 0px;
@@ -286,8 +292,8 @@ html{
                             }
                         }
                         button{
-                            margin-top: 0.25rem;
-                            margin-bottom: 0.25rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
                             border-style: none;
                             height: 5rem;
                             width: 80%;
@@ -298,19 +304,51 @@ html{
                             cursor: pointer;
                         }
                     }
-                }
+                    p {
+                        color: white; 
+                        padding-left: 1rem;
+                        padding-right: 1rem;                      
+                    }
+                } 
+                .bloque_dsc {
+                    margin-top: 2rem; 
+                    
+                    h3{
+                        color: white;
+                        font-size: 2rem;
+                    }
+                    div {
+                        display: block;
+                        border: #BAA75B solid 1.5px;
+                        border-radius: 1.5rem; 
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        color:beige;
+                        h4 {                            
+                            text-align: center;
+                            font-size: large;
+                            margin-bottom: 0;
+                        }
+                        p {                           
+                            text-align: center;
+                            font-size: medium;
+                            margin-top: 10px;
+                        }
+                    }
+                }           
             }
         }
-        
+
         footer {
-            background-color: #6E643B;             
-            width: 100vw;        
+            background-color: #6E643B;
+            height: 100px;  
+            width: 100%;        
             color: beige;
             display: flex; 
             align-items: center;
             justify-content:space-evenly;
             font-size: 1.2rem;
-            flex-direction: column;
+
             ul{
                 text-align: center;
                 a {

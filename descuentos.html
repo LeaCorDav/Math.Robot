@@ -5,40 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math.Robot: Percentages and Discounts</title>
+    <link href="./descuentos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Percentages and Discounts</h1>
+        <div class="titulo">
+            <img id="logo" src="./imagenes/asistente-de-robot.png" alt="logo"/>
+            <h1>Math.Robot</h1>            
+        </div>
+        <h2>Calculate easier with us</h2>
     </header>
-    <section>
-        <h3>Calculate the final ammount you would have to pay for your product</h3>
-        <form>
-            <label for="InputPrecio">Write the total cost</label>
-            <input id="InputPrecio" type="number" placeholder="Total ammount"/>
-            
-            <label for="InputDescuento">Write the discount percentage</label>
-            <input id="InputDescuento" type="number" placeholder="Discount"/>
-            
-            <button type="button" onclick="precioDescontado()">CALCULATE: Final Cost</button>
-        </form>
 
-        <p id="Resultado"></p>
-    </section>
-    <section>
-        <h3>Calculate the final price if you have any store's discount coupon</h3>
-        <form>
-            <label for="InputPrecio2">Write the total ammount</label>
-            <input id="InputPrecio2" type="number" placeholder="Total ammount"/>
-            
-            <label for="InputCupon">Write the discount coupon code</label>
-            <input id="InputCupon" type="text" placeholder="Coupon's code"/>
-            
-            <button type="button" onclick="precioDescontadoCupon()">CALCULATE: Final Ammount</button>
-        </form>
+    <main>
+        <section class="titulo_pagina">
+            <img src="./imagenes/venta.png" alt="logo_descuentos"/>
+            <h1>PERCENTAGES AND DISCOUNTS</h1>
+        </section>
+        <div>
+            <section class="bloque">
+                <h3>Calculate the final ammount you would have to pay for your product</h3>
+                <form>
+                    <label for="InputPrecio">Write the total cost</label>
+                    <input id="InputPrecio" type="number" placeholder="Total ammount"/>
+                    
+                    <label for="InputDescuento">Write the discount percentage</label>
+                    <input id="InputDescuento" type="number" placeholder="Discount"/>
+                    
+                    <button type="button" onclick="precioDescontado()">CALCULATE: Final Cost</button>
+                </form>
+                <p id="Resultado"></p>
+            </section>
+            <section class="bloque">
+                <h3>Calculate the final price if you have any store's discount coupon</h3>
+                <form>
+                    <label for="InputPrecio2">Write the total ammount</label>
+                    <input id="InputPrecio2" type="number" placeholder="Total ammount"/>
+                    
+                    <label for="InputCupon">Write the discount coupon code</label>
+                    <input id="InputCupon" type="text" placeholder="Coupon's code"/>
+                    
+                    <button type="button" onclick="precioDescontadoCupon()">CALCULATE: Final Ammount</button>
+                </form>
+                <p id="ResultadoCupon"></p>
+            </section>
+            <section class="bloque_dsc">
+                <h3>Enter these discount's code</h3>
+                <div>
+                    <h4>SPRING_DSC</h4>
+                    <p>15%</p>
+                </div>
+                <div>
+                    <h4>SUMMER_DSC</h4>
+                    <p>10%</p>
+                </div>
+                <div>
+                    <h4>INDEPENDENCEDAY_DSC</h4>
+                    <p>30%</p>
+                </div>
+                <div>
+                    <h4>BLACKFRIDAY_DSC</h4>
+                    <p>75%</p>
+                </div>
+                <div>
+                    <h4>XMASS_DSC</h4>
+                    <p>25%</p>
+                </div>
+            </section>
+        </div>
+    </main>
 
-        <p id="ResultadoCupon"></p>
-    </section>
-
+    <footer>
+        <ul>
+            <a href="./index.html"><li>Home</li></a> 
+            <a href="./figuras.html"><li>Geometric Figures</li></a>
+            <a href="./descuentos.html"><li>Discounts</li></a>
+            <a href="./promedio.html"><li>Average</li></a>          
+        </ul>
+        <ul>
+            <li>Created by Leandro Cordero</li>
+            <a href="https://github.com/LeaCorDav"><li>Github</li></a>
+            <a href="https://twitter.com/LeaCordav"><li>Twitter</li></a>
+        </ul>
+    </footer>
 
     <script src="./descuentos.js"></script>
 </body>

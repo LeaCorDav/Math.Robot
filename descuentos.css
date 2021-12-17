@@ -7,7 +7,241 @@ html {
   font-size: 62.5%;
 }
 
-@media (min-width: 631px) {
+@media (max-width: 979px) {
+  body {
+    height: 100vh;
+    font-family: Tw Cen Mt;
+    margin: 0px;
+    width: 100%;
+  }
+  body header {
+    background-color: #233B38;
+    height: 150px;
+    width: 100%;
+    font-family: BankGothic Md BT;
+  }
+  body header .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header .titulo h1 {
+    color: azure;
+    font-size: 4rem;
+  }
+  body header .titulo #logo {
+    height: 100px;
+  }
+  body header h2 {
+    color: #B0C6C3;
+    margin-left: 10rem;
+    margin-top: -3rem;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #6e6432;
+    background: -webkit-gradient(linear, left bottom, left top, from(#6e6432), to(#233b38));
+    background: linear-gradient(0deg, #6e6432 0%, #233b38 100%);
+  }
+  body main .titulo_pagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .titulo_pagina img {
+    height: 50px;
+    margin-top: 15px;
+  }
+  body main .titulo_pagina h1 {
+    font-size: 7.5vw;
+    margin-top: 10px;
+    text-align: center;
+  }
+  body main div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main div .bloque {
+    position: relative;
+    margin: 3rem;
+    width: 30rem;
+    height: 55rem;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 3rem;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    border: #BAA75B solid 3px;
+    -webkit-box-shadow: 5px 10px rgba(0, 0, 0, 0.253);
+            box-shadow: 5px 10px rgba(0, 0, 0, 0.253);
+  }
+  body main div .bloque h3 {
+    color: white;
+  }
+  body main div .bloque form {
+    color: beige;
+  }
+  body main div .bloque form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body main div .bloque form input {
+    margin-top: 0.5rem;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 14px;
+    border-radius: 1rem;
+    height: 5rem;
+    width: 80%;
+    background-color: rgba(131, 131, 131, 0.3);
+    color: beige;
+    text-align: center;
+  }
+  body main div .bloque form input ::-webkit-input-placeholder {
+    color: ghostwhite;
+    font-size: 1.5rem;
+  }
+  body main div .bloque form input :-ms-input-placeholder {
+    color: ghostwhite;
+    font-size: 1.5rem;
+  }
+  body main div .bloque form input ::-ms-input-placeholder {
+    color: ghostwhite;
+    font-size: 1.5rem;
+  }
+  body main div .bloque form input ::placeholder {
+    color: ghostwhite;
+    font-size: 1.5rem;
+  }
+  body main div .bloque form button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-style: none;
+    height: 5rem;
+    width: 80%;
+    background-color: #6E643B;
+    color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  body main div .bloque p {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body main div .bloque_dsc {
+    margin-top: 0;
+    width: 30rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+  }
+  body main div .bloque_dsc h3 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  body main div .bloque_dsc div {
+    border: #BAA75B solid 1.5px;
+    border-radius: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: beige;
+  }
+  body main div .bloque_dsc div h4 {
+    text-align: center;
+    font-size: large;
+    margin-bottom: 0;
+  }
+  body main div .bloque_dsc div p {
+    text-align: center;
+    font-size: medium;
+    margin-top: 10px;
+  }
+  body footer {
+    background-color: #6E643B;
+    width: 100vw;
+    color: beige;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 1.2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer ul {
+    text-align: center;
+  }
+  body footer ul a {
+    text-decoration: none;
+    color: beige;
+    font-weight: normal;
+  }
+  body footer ul a li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+  }
+  body footer ul li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+  }
+}
+
+@media (min-width: 980px) {
   body {
     height: 100vh;
     font-family: Tw Cen Mt;
@@ -77,24 +311,18 @@ html {
   body main .titulo_pagina h1 {
     font-size: 50px;
   }
-  body main .container_formas {
+  body main div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 80%;
   }
-  body main .container_formas .bloqueforma {
+  body main div .bloque {
     position: relative;
     margin: 3rem;
     width: 30rem;
     height: 55rem;
     background: rgba(0, 0, 0, 0.35);
-    color: beige;
+    padding: 3rem;
     border-radius: 2.5rem;
     font-size: 2rem;
     display: -webkit-box;
@@ -114,35 +342,20 @@ html {
     -webkit-box-shadow: 5px 10px rgba(0, 0, 0, 0.253);
             box-shadow: 5px 10px rgba(0, 0, 0, 0.253);
   }
-  body main .container_formas .bloqueforma .icono_figura {
-    height: 75px;
-    width: 75px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  body main .container_formas .bloqueforma h3 {
-    color: #6E643B;
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  body main .container_formas .bloqueforma form {
-    display: block;
-  }
-  body main .container_formas .bloqueforma form label {
-    margin-bottom: 1rem;
-  }
-  body main .container_formas .bloqueforma form p {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    font-size: 1.5rem;
+  body main div .bloque h3 {
     color: white;
   }
-  body main .container_formas .bloqueforma form input[type=radio] {
-    height: 8px;
+  body main div .bloque form {
+    color: beige;
   }
-  body main .container_formas .bloqueforma form input[type=number] {
+  body main div .bloque form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body main div .bloque form input {
     margin-top: 0.5rem;
     border-top: 0px;
     border-left: 0px;
@@ -150,255 +363,73 @@ html {
     font-size: 14px;
     border-radius: 1rem;
     height: 5rem;
-    width: 50%;
+    width: 80%;
     background-color: rgba(131, 131, 131, 0.3);
     color: beige;
     text-align: center;
   }
-  body main .container_formas .bloqueforma form input[type=number] ::-webkit-input-placeholder {
+  body main div .bloque form input ::-webkit-input-placeholder {
     color: ghostwhite;
     font-size: 1.5rem;
   }
-  body main .container_formas .bloqueforma form input[type=number] :-ms-input-placeholder {
+  body main div .bloque form input :-ms-input-placeholder {
     color: ghostwhite;
     font-size: 1.5rem;
   }
-  body main .container_formas .bloqueforma form input[type=number] ::-ms-input-placeholder {
+  body main div .bloque form input ::-ms-input-placeholder {
     color: ghostwhite;
     font-size: 1.5rem;
   }
-  body main .container_formas .bloqueforma form input[type=number] ::placeholder {
+  body main div .bloque form input ::placeholder {
     color: ghostwhite;
     font-size: 1.5rem;
   }
-  body main .container_formas .bloqueforma form button {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+  body main div .bloque form button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-style: none;
-    height: 3rem;
-    width: 50%;
+    height: 5rem;
+    width: 80%;
     background-color: #6E643B;
     color: white;
     font-weight: bold;
     border-radius: 1rem;
     cursor: pointer;
   }
-  body footer {
-    background-color: #6E643B;
-    height: 100px;
-    width: 100%;
-    color: beige;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    font-size: 1.2rem;
+  body main div .bloque p {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  body footer ul {
+  body main div .bloque_dsc {
+    margin-top: 2rem;
+  }
+  body main div .bloque_dsc h3 {
+    color: white;
+    font-size: 2rem;
+  }
+  body main div .bloque_dsc div {
+    display: block;
+    border: #BAA75B solid 1.5px;
+    border-radius: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: beige;
+  }
+  body main div .bloque_dsc div h4 {
     text-align: center;
+    font-size: large;
+    margin-bottom: 0;
   }
-  body footer ul a {
-    text-decoration: none;
-    color: beige;
-    font-weight: normal;
-  }
-  body footer ul a li {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    list-style: none;
-  }
-  body footer ul li {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    list-style: none;
-  }
-}
-
-@media (max-width: 630px) {
-  body {
-    height: 100vh;
-    font-family: Tw Cen Mt;
-    margin: 0px;
-    width: 100vw;
-  }
-  body header {
-    background-color: #233B38;
-    height: 150px;
-    width: 100%;
-    font-family: BankGothic Md BT;
-  }
-  body header .titulo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body header .titulo h1 {
-    color: azure;
-    font-size: 4rem;
-  }
-  body header .titulo #logo {
-    height: 100px;
-  }
-  body header h2 {
-    color: #B0C6C3;
-    margin-left: 10rem;
-    margin-top: -3rem;
-  }
-  body main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #6e6432;
-    background: -webkit-gradient(linear, left bottom, left top, from(#6e6432), to(#233b38));
-    background: linear-gradient(0deg, #6e6432 0%, #233b38 100%);
-  }
-  body main .titulo_pagina {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body main .titulo_pagina img {
-    height: 50px;
-    margin-top: 15px;
-  }
-  body main .titulo_pagina h1 {
-    font-size: 7.5vw;
+  body main div .bloque_dsc div p {
+    text-align: center;
+    font-size: medium;
     margin-top: 10px;
   }
-  body main .container_formas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    width: 80%;
-  }
-  body main .container_formas .bloqueforma {
-    position: relative;
-    margin: 3rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    width: 30rem;
-    background: rgba(0, 0, 0, 0.35);
-    color: beige;
-    border-radius: 2.5rem;
-    font-size: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    text-align: center;
-    border: #BAA75B solid 3px;
-    -webkit-box-shadow: 5px 10px rgba(0, 0, 0, 0.253);
-            box-shadow: 5px 10px rgba(0, 0, 0, 0.253);
-  }
-  body main .container_formas .bloqueforma .icono_figura {
-    height: 75px;
-    width: 75px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  body main .container_formas .bloqueforma h3 {
-    color: #6E643B;
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  body main .container_formas .bloqueforma form {
-    display: block;
-  }
-  body main .container_formas .bloqueforma form label {
-    display: block;
-    margin-bottom: 1rem;
-  }
-  body main .container_formas .bloqueforma form p {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    font-size: 1.5rem;
-    color: white;
-  }
-  body main .container_formas .bloqueforma form input[type=radio] {
-    height: 8px;
-  }
-  body main .container_formas .bloqueforma form input[type=number] {
-    margin-top: 0.5rem;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    font-size: 14px;
-    border-radius: 1rem;
-    height: 5rem;
-    width: 80%;
-    background-color: rgba(131, 131, 131, 0.3);
-    color: beige;
-    text-align: center;
-  }
-  body main .container_formas .bloqueforma form input[type=number] ::-webkit-input-placeholder {
-    color: ghostwhite;
-    font-size: 1.5rem;
-  }
-  body main .container_formas .bloqueforma form input[type=number] :-ms-input-placeholder {
-    color: ghostwhite;
-    font-size: 1.5rem;
-  }
-  body main .container_formas .bloqueforma form input[type=number] ::-ms-input-placeholder {
-    color: ghostwhite;
-    font-size: 1.5rem;
-  }
-  body main .container_formas .bloqueforma form input[type=number] ::placeholder {
-    color: ghostwhite;
-    font-size: 1.5rem;
-  }
-  body main .container_formas .bloqueforma form button {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    border-style: none;
-    height: 5rem;
-    width: 80%;
-    background-color: #6E643B;
-    color: white;
-    font-weight: bold;
-    border-radius: 1rem;
-    cursor: pointer;
-  }
   body footer {
     background-color: #6E643B;
-    width: 100vw;
+    height: 100px;
+    width: 100%;
     color: beige;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -410,10 +441,6 @@ html {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     font-size: 1.2rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   body footer ul {
     text-align: center;
@@ -434,4 +461,4 @@ html {
     list-style: none;
   }
 }
-/*# sourceMappingURL=figuras.css.map */
+/*# sourceMappingURL=descuentos.css.map */
