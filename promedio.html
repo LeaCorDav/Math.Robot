@@ -5,51 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math.Robot: Average</title>
+    <link href="./promedio.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Average</h1>
+        <div class="titulo">
+            <img id="logo" src="./imagenes/asistente-de-robot.png" alt="logo"/>
+            <h1>Math.Robot</h1>            
+        </div>
+        <h2>Calculate easier with us</h2>
     </header>
 
-    <section>
-        <h3>Calculate the Arithmetic Median</h3>
-        <form>
-            <label for="InputNumero1">Write the numbers you need</label>
-            <input id="InputNumero1" type="number" placeholder="New Number"/>
-            
-            <button type="button" onclick="onclickSumarNumero()">Add number</button>
-            <button type="button" onclick="onclickMediaAritmetica()">CALCULATE: Arithmetic Median</button>
-        </form>
+    <main>
+        <section class="titulo_pagina">
+            <img src="./imagenes/average.png" alt="logo_promedio"/>
+            <h1>Average</h1>
+        </section>
 
-        <p id="ResultadoNumerosA"></p>
-        <p id="ResultadoMediaAritmetica"></p>
-    </section>
+        <div class="container">
+            <section class="box">
+                <h3>Calculate the Arithmetic Median</h3>
+                <form>
+                    <label for="InputNumero1">Write the numbers you need and add them one by one</label>
+                    <input id="InputNumero1" type="number" placeholder="New Number"/>
+                    
+                    <button type="button" onclick="onclickSumarNumero()">Add number</button>
+                    <button type="button" onclick="onclickMediaAritmetica()">CALCULATE: Arithmetic Median</button>
+                </form>
+        
+                <p id="ResultadoNumerosA"></p>
+                <p id="ResultadoMediaAritmetica"></p>
+            </section>
+            <section class="box">
+                <h3>Calculate the Median</h3>
+                <form>
+                    <label for="InputNumero2">Write the numbers you need</label>
+                    <input id="InputNumero2" type="number" placeholder="New Number"/>
+                                
+                    <button type="button" onclick="onclickMedia()">Add & calculate Median</button>
+                </form>
+        
+                <p id="ResultadoNumerosB"></p>
+                <p id="ResultadoMedia"></p>
+            </section>
+            <section class="box">
+                <h3>Calculate the Mode or Modal Value</h3>
+                <form>
+                    <label for="InputNumero3">Write all the numbers you need with a space " " between</label>
+                    <input id="InputNumero3" type="text" placeholder="New Number"/>
+                                
+                    <button type="button" onclick="onclickModa()">CALCULATE: Mode</button>
+                </form>
+        
+                <p id="ResultadoNumerosC"></p>
+                <p id="ResultadoModa"></p>
+            </section>
+        </div>
+    </main>
 
-    <section>
-        <h3>Calculate the Median</h3>
-        <form>
-            <label for="InputNumero2">Write the numbers you need</label>
-            <input id="InputNumero2" type="number" placeholder="New Number"/>
-                        
-            <button type="button" onclick="onclickMedia()">Add & calculate Median</button>
-        </form>
-
-        <p id="ResultadoNumerosB"></p>
-        <p id="ResultadoMedia"></p>
-    </section>
-
-    <section>
-        <h3>Calculate the Mode or Modal Value</h3>
-        <form>
-            <label for="InputNumero3">Write the numbers you need with a space " " between</label>
-            <input id="InputNumero3" type="text" placeholder="New Number"/>
-                        
-            <button type="button" onclick="onclickModa()">CALCULATE: Mode</button>
-        </form>
-
-        <p id="ResultadoNumerosC"></p>
-        <p id="ResultadoModa"></p>
-    </section>
+    <footer>
+        <ul>
+            <a href="./index.html"><li>Home</li></a> 
+            <a href="./figuras.html"><li>Geometric Figures</li></a>
+            <a href="./descuentos.html"><li>Discounts</li></a>
+            <a href="./promedio.html"><li>Average</li></a>          
+        </ul>
+        <ul>
+            <li>Created by Leandro Cordero</li>
+            <a href="https://github.com/LeaCorDav"><li>Github</li></a>
+            <a href="https://twitter.com/LeaCordav"><li>Twitter</li></a>
+        </ul>
+    </footer>    
 
     <script src="./promedio.js"></script>
 </body>
