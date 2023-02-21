@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.Robot: Salaries</title>
+</head>
+<body>
+    <header>
+        <h1>Your team's salaries</h1>
+    </header>
+
+    <section>
+        <h3>Enter your team's information</h3>
+        <form>
+            <label for="InputDatos">Write the name and salary with "/" between</label>           
+            <input id="InputDatos" type="text" placeholder="Name/Salary"/>
+            
+            <button type="button" onclick="onclickSumar()">ADD ENTRY</button>
+            <button type="button" onclick="onclickMediaAritmetica()">CALCULATE: Arithmetic Median</button>
+        </form>
+
+        <p id="Entradas"></p>
+        <p id="ResultadoMediaAritmetica"></p>
+    </section>
+
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+</body>
+</html>
