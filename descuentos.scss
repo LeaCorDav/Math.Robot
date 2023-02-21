@@ -1,329 +1,384 @@
-*{
-    box-sizing: border-box; 
-}
+@use "sass" as parciales;
 
-html{
-    font-size: 62.5%;
-}
+body {
+    font-family: Tw Cen Mt; 
+    margin: 0px; 
+    width: 100%;   
+    background: parciales.$fondo;
+    a{
+        text-decoration: none;        
+    }
 
-@media (max-width: 979px){
-    body {
-        height: 100vh;
-        font-family: Tw Cen Mt; 
-        margin: 0px;    
-        width: 100%;
-        header {        
-            background-color: #233B38;
-            height: 150px;  
-            width: 100%;  
-            font-family: BankGothic Md BT;   
-            .titulo{
-                display: flex;    
-                align-items: center;
+    header {  
+        height: 15%;    
+        width: 85%;
+        font-family: BankGothic Md BT;                    
+        margin: 3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-                h1 {
-                    color: azure;   
-                    font-size: 4rem; 
-                }
-
-                #logo {
-                    height: 100px;                    
-                }
-            }
-            
-            h2 {
-                color: #B0C6C3;                  
-                margin-left: 10rem;
-                margin-top: -3rem;
-            }
+        #logo {
+            height: 6rem;
         }
 
-        main {
-            display: flex;
-            flex-direction: column;            
-            align-items: center;           
-            background: rgb(110,100,50);
-            background: linear-gradient(0deg, rgba(110,100,50,1) 0%, rgba(35,59,56,1) 100%);
-            .titulo_pagina{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                img {
-                    height: 50px;
-                    margin-top: 15px;                    
-                }
-                h1 {
-                    font-size: 7.5vw;
-                    margin-top: 10px;
-                    text-align: center;
-                }
-            }
-            div {
-                display: flex;
-                flex-direction: column;
-                .bloque{
-                    position: relative;
-                    margin: 3rem;    
-                    width: 30rem;
-                    height: 55rem;
-                    background: rgba(0, 0, 0, 0.35);
-                    padding: 3rem;
-                    border-radius: 2.5rem;
-                    font-size: 2rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-content:center;
-                    text-align: center;
-                    border: #BAA75B solid 3px;  
-                    box-shadow: 5px 10px rgba(0, 0, 0, 0.253); 
-                    h3{
-                        color: white;
-                    }
-                    form {                        
-                        color: beige;                        
-                        label {
-                            display: block;
-                            margin-top: 10px;
-                            font-size: 1.6rem;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                        }
-                        input{        
-                            margin-top: 0.5rem;
-                            border-top: 0px;
-                            border-left: 0px;
-                            border-right: 0px;
-                            font-size: 14px;
-                            border-radius: 1rem;
-                            height: 5rem;
-                            width: 80%;
-                            background-color: rgba(131, 131, 131, 0.3);
-                            color: beige;
-                            text-align: center;
-                            ::placeholder {
-                                color: rgba(248, 248, 255, 1);
-                                font-size: 1.5rem;
-                            }
-                        }
-                        button{
-                            margin-top: 1rem;
-                            margin-bottom: 1rem;
-                            border-style: none;
-                            height: 5rem;
-                            width: 80%;
-                            background-color: #6E643B;
-                            color: white;
-                            font-weight: bold;                            
-                            border-radius: 1rem;  
-                            cursor: pointer;
-                        }
-                    }
-                    p {
-                        color: white; 
-                        padding-left: 1rem;
-                        padding-right: 1rem;                      
-                    }
-                } 
-                .bloque_dsc {
-                    margin-top: 0;                      
-                    width: 30rem; 
-                    text-align: center;  
-                    margin-left: auto;   
-                    margin-right: auto;  
-                    margin-bottom: 10rem;        
-                    h3{
-                        color: white;
-                        font-size: 2rem;
-                        margin-top: 0%;
-                        margin-bottom: 1rem;
-                        text-align: center;
-                    }
-                    div {  
-                        
-                        border: #BAA75B solid 1.5px;
-                        border-radius: 1.5rem; 
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        color:beige;
-                        h4 {                            
-                            text-align: center;
-                            font-size: large;
-                            margin-bottom: 0;
-                        }
-                        p {                           
-                            text-align: center;
-                            font-size: medium;
-                            margin-top: 10px;
-                        }
-                    }
-                }           
-            }
-        }
-
-        footer {
-            background-color: #6E643B;             
-            width: 100vw;        
-            color: beige;
-            display: flex; 
-            align-items: center;
-            justify-content:space-evenly;
-            font-size: 1.2rem;
+        .titulo{
+            display: flex;    
             flex-direction: column;
-            ul{
+            h1 {
+                color: parciales.$head1;   
+                font-size: 3rem; 
+            }
+            h2 {
+                color: parciales.$head2;
+                font-size: 1.2rem; 
+                margin-top: -2rem;
+            }            
+        }        
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;            
+        align-items: center; 
+        .titulo_pagina{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img {
+                height: 100px;
+                margin-top: 15px;                    
+            }
+            h1 {
+                font-size: 3rem;
+                margin-top: 15px;
+                color: parciales.$head1;
                 text-align: center;
-                a {
-                    text-decoration: none;
-                    color: beige;
-                    font-weight: normal;
-                    li{
-                        margin-top: 0.5rem;
-                        margin-bottom: 0.5rem;
-                        list-style: none
+            }
+        }
+
+        div {
+            display: flex;      
+            flex-wrap: wrap;               
+            .bloque{
+                z-index: 2;
+                position: relative;
+                margin: 5rem;    
+                width: 30rem;
+                height: 60rem;
+                padding: 5rem;
+                border-radius: 50px;
+                font-size: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content:center;
+                text-align: center;
+                background: parciales.$boxbackground;
+                box-shadow: parciales.$boxshadow; 
+                backdrop-filter: parciales.$boxglass;
+                h3{
+                    color: parciales.$primario;
+                    font-size: 2.4rem;
+                    margin-top: 1.6rem;
+                    margin-bottom: 1rem;
+                }
+                form {                        
+                    display: block; 
+                    color: parciales.$secundario;
+                    font-size: 2rem;                      
+                    label {
+                        display: block; 
+                        margin-top: 2.4rem;
+                        margin-bottom: 1rem;
                     }
-                } 
+                    input{        
+                        margin-top: 0.5rem;
+                        border-top: 0px;
+                        border-left: 0px;
+                        border-right: 0px;
+                        font-size: 1.4rem;
+                        border-radius: 1rem;
+                        height: 4rem;
+                        width: 85%;
+                        background-color: parciales.$boxbackground;
+                        color: parciales.$secundario;
+                        text-align: center;
+                        &::placeholder {
+                            color: parciales.$boxbackground;
+                            font-size: 1.4rem;
+                        }
+                    }
+                    button{
+                        margin-top: 1rem;
+                        margin-bottom: 0.25rem;
+                        border-style: none;
+                        width: 85%;
+                        background-color: parciales.$primario;
+                        color: parciales.$secundario;
+                        font-weight: bold;                            
+                        border-radius: 1rem;  
+                        cursor: pointer;
+                        font-size: 1.4rem;
+                        padding: 1.5rem 3rem;
+                    }
+                }
+                p {
+                    color: parciales.$primario; 
+                    padding-left: 1rem;
+                    padding-right: 1rem;  
+                    font-weight: normal;
+                    font-size: 1.6rem;                    
+                }
+            } 
+            .bloque_dsc {
+                display: flex;
+                flex-direction: column;            
+                justify-content:center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                h3{
+                    color: white;
+                    font-size: 2rem;
+                }
+                div {
+                    width: 20rem;
+                    display: block;
+                    border: parciales.$secundario solid 1.5px;
+                    border-radius: 1.5rem; 
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    color:parciales.$secundario;
+                    h4 {                            
+                        text-align: center;
+                        font-size: large;
+                        margin-bottom: 0;
+                    }
+                    p {                           
+                        text-align: center;
+                        font-size: medium;
+                        margin-top: 10px;
+                    }
+                }
+            }           
+        }
+
+        .simbolos{    
+            z-index: 1;        
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            top: 0;
+            img{                                  
+                @include parciales.keyframes(bubble){
+                    0%{
+                        transform: translateY(0);
+                        opacity: 0;
+                        filter: drop-shadow(0 0 5px #58A690);
+                    }
+                   25%{
+                        opacity: 1;
+                        filter: drop-shadow(0 0 10px hsl(163, 75%, 50%));
+                    }
+                   75%{
+                        opacity: 1;
+                        filter: drop-shadow(0 0 15px hsl(163, 75%, 50%));
+                    }
+                   100%{
+                        transform: translateY(280vh);
+                        opacity: 0;
+                        filter: drop-shadow(0 0 20px hsl(163, 75%, 50%));
+                    }
+                }
+
+                @include parciales.animate(bubble, 10s, linear, infinite);
+
+                &:nth-child(1){
+                    animation-delay: -2s;
+                    width: 3rem;        
+                }
+                &:nth-child(2){
+                    animation-delay: -1s;
+                    width: 2rem;                    
+                }
+                &:nth-child(3){
+                    animation-delay: -4s;
+                    width: 4rem;                    
+                }
+                &:nth-child(4){
+                    animation-delay: -5s;
+                    width: 5rem;                    
+                }
+                &:nth-child(5){
+                    animation-delay: -3.5s;
+                    width: 3.5rem;                 
+                }
+                &:nth-child(6){
+                    animation-delay: -2s;
+                    width: 2.5rem;                    
+                }
+            }
+        }
+    }
+
+    footer {        
+        width: 100%;        
+        color: parciales.$head1;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        flex-direction: column;
+        margin-top: 3rem;
+        ul{
+            text-align: center;
+            padding: 0;
+            a {
+                text-decoration: none;
+                color: parciales.$head1;
+                font-weight: normal;
                 li{
                     margin-top: 0.5rem;
                     margin-bottom: 0.5rem;
                     list-style: none
-                }           
-            }
+                }
+            } 
+            li{
+                margin-top: 0.5rem;
+                list-style: none
+            }           
         }
     }
 }
 
-@media (min-width: 980px){
+@media (min-width: 480px){
     body {
-        height: 100vh;
-        font-family: Tw Cen Mt; 
-        margin: 0px;    
-        width: 100%;
-        header {        
-            background-color: #233B38;
-            height: 100px;    
-            font-family: BankGothic Md BT;
-            display: flex; 
-            align-items: center;
-            justify-content: space-between;
-
-            .titulo{
-                display: flex;    
-                align-items: center;
-
+        header {          
+            #logo {
+                height: 100px;
+            }
+            .titulo{  
                 h1 {
-                    color: azure;   
-                    font-size: 4rem; 
+                    font-size: 4.8rem; 
                 }
-
-                #logo {
-                    height: 100px;
-                }
-            }
-            
-            h2 {
-                color: #B0C6C3;  
-                margin-right: 3rem; 
-            }
+                h2 {
+                    font-size: 1.6rem;
+                    margin-top: -3rem;             
+                }                
+            } 
         }
-
+        
         main {
-            display: flex;
-            flex-direction: column;            
-            align-items: center;           
-            background: rgb(110,100,50);
-            background: linear-gradient(0deg, rgba(110,100,50,1) 0%, rgba(35,59,56,1) 100%);
             .titulo_pagina{
-                display: flex;
-                align-items: center;
                 img {
-                    height: 50px;
-                    margin: 15px;
+                    height: 100px;
+                    margin-top: 15px;                    
                 }
                 h1 {
-                    font-size: 50px;
+                    font-size: 3rem;
+                    margin-top: 15px;
+                    color: parciales.$head1;
+                    text-align: center;
                 }
             }
+
             div {
-                display: flex;      
-                             
+                display: grid;      
+                grid-template-columns: 2fr 1fr;              
                 .bloque{
+                    z-index: 2;
                     position: relative;
-                    margin: 3rem;    
+                    margin: 5rem;    
                     width: 30rem;
-                    height: 55rem;
-                    background: rgba(0, 0, 0, 0.35);
-                    padding: 3rem;
-                    border-radius: 2.5rem;
+                    height: 60rem;
+                    padding: 5rem;
+                    border-radius: 50px;
                     font-size: 2rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-content:center;
                     text-align: center;
-                    border: #BAA75B solid 3px;  
-                    box-shadow: 5px 10px rgba(0, 0, 0, 0.253); 
+                    background: parciales.$boxbackground;
+                    box-shadow: parciales.$boxshadow; 
+                    backdrop-filter: parciales.$boxglass;
                     h3{
-                        color: white;
+                        color: parciales.$primario;
+                        font-size: 2.4rem;
+                        margin-top: 1.6rem;
+                        margin-bottom: 1rem;
                     }
                     form {                        
-                        color: beige;                        
+                        display: block; 
+                        color: parciales.$secundario;
+                        font-size: 2rem;                      
                         label {
-                            display: block;
-                            margin-top: 10px;
-                            font-size: 1.6rem;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
+                            display: block; 
+                            margin-top: 2.4rem;
+                            margin-bottom: 1rem;
                         }
                         input{        
                             margin-top: 0.5rem;
                             border-top: 0px;
                             border-left: 0px;
                             border-right: 0px;
-                            font-size: 14px;
+                            font-size: 1.4rem;
                             border-radius: 1rem;
-                            height: 5rem;
-                            width: 80%;
-                            background-color: rgba(131, 131, 131, 0.3);
-                            color: beige;
+                            height: 4rem;
+                            width: 85%;
+                            background-color: parciales.$boxbackground;
+                            color: parciales.$secundario;
                             text-align: center;
-                            ::placeholder {
-                                color: rgba(248, 248, 255, 1);
-                                font-size: 1.5rem;
+                            &::placeholder {
+                                color: parciales.$boxbackground;
+                                font-size: 1.4rem;
                             }
                         }
                         button{
                             margin-top: 1rem;
-                            margin-bottom: 1rem;
+                            margin-bottom: 0.25rem;
                             border-style: none;
-                            height: 5rem;
-                            width: 80%;
-                            background-color: #6E643B;
-                            color: white;
+                            
+                            width: 85%;
+                            background-color: parciales.$primario;
+                            color: parciales.$secundario;
                             font-weight: bold;                            
                             border-radius: 1rem;  
                             cursor: pointer;
+                            font-size: 1.4rem;
+                            padding: 1.5rem 3rem;
                         }
                     }
                     p {
-                        color: white; 
+                        color: parciales.$primario; 
                         padding-left: 1rem;
-                        padding-right: 1rem;                      
+                        padding-right: 1rem;  
+                        font-weight: normal;
+                        font-size: 1.6rem;                    
                     }
                 } 
                 .bloque_dsc {
-                    margin-top: 2rem; 
-                    
+                    grid-column: 2;
+                    grid-row: 1 / 3;
+                    display: flex;
+                    flex-direction: column;            
+                    justify-content:center;
+                    align-items: center;
                     h3{
                         color: white;
                         font-size: 2rem;
                     }
                     div {
+                        width: 20rem;
                         display: block;
-                        border: #BAA75B solid 1.5px;
+                        border: parciales.$secundario solid 1.5px;
                         border-radius: 1.5rem; 
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        color:beige;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        color:parciales.$secundario;
                         h4 {                            
                             text-align: center;
                             font-size: large;
@@ -337,36 +392,204 @@ html{
                     }
                 }           
             }
+
+            .simbolos{ 
+                img{                                  
+                    @include parciales.keyframes(bubble){
+                        0%{
+                            transform: translateY(0);
+                            opacity: 0;
+                            filter: drop-shadow(0 0 5px #58A690);
+                        }
+                    25%{
+                            opacity: 1;
+                            filter: drop-shadow(0 0 10px hsl(163, 75%, 50%));
+                        }
+                    75%{
+                            opacity: 1;
+                            filter: drop-shadow(0 0 15px hsl(163, 75%, 50%));
+                        }
+                    100%{
+                            transform: translateY(180vh);
+                            opacity: 0;
+                            filter: drop-shadow(0 0 20px hsl(163, 75%, 50%));
+                        }
+                    }
+                }
+            }
         }
 
-        footer {
-            background-color: #6E643B;
-            height: 100px;  
-            width: 100%;        
-            color: beige;
-            display: flex; 
-            align-items: center;
+        footer { 
+            margin-top: 35px;
+            flex-direction: row;
             justify-content:space-evenly;
-            font-size: 1.2rem;
+            font-size: 1.2rem;    
+        }
+    }
+}
 
-            ul{
-                text-align: center;
-                a {
-                    text-decoration: none;
-                    color: beige;
-                    font-weight: normal;
-                    li{
-                        margin-top: 0.5rem;
-                        margin-bottom: 0.5rem;
-                        list-style: none
+@media (min-width: 940px){
+    body {
+        header {
+            .titulo{
+                width: 100%;
+                flex-direction: row;               
+                align-items: center;
+                justify-content: space-between;          
+                h2{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+            }
+        }
+        
+        main {
+            .titulo_pagina{
+                img {
+                    height: 100px;
+                    margin-top: 15px;                    
+                }
+                h1 {
+                    font-size: 3rem;
+                    margin-top: 15px;
+                    color: parciales.$head1;
+                    text-align: center;
+                }
+            }
+
+            div {
+                display: flex;
+                justify-content: space-around;            
+                .bloque{
+                    z-index: 2;
+                    position: relative;
+                    width: 30rem;
+                    height: 60rem;
+                    padding: 5rem;
+                    border-radius: 50px;
+                    font-size: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content:center;
+                    text-align: center;
+                    h3{
+                        color: parciales.$primario;
+                        font-size: 2.4rem;
+                        margin-top: 1.6rem;
+                        margin-bottom: 1rem;
+                    }
+                    form {                        
+                        display: block; 
+                        color: parciales.$secundario;
+                        font-size: 2rem;                      
+                        label {
+                            display: block; 
+                            margin-top: 2.4rem;
+                            margin-bottom: 1rem;
+                        }
+                        input{        
+                            margin-top: 0.5rem;
+                            border-top: 0px;
+                            border-left: 0px;
+                            border-right: 0px;
+                            font-size: 1.4rem;
+                            border-radius: 1rem;
+                            height: 4rem;
+                            width: 85%;
+                            background-color: parciales.$boxbackground;
+                            color: parciales.$secundario;
+                            text-align: center;
+                            &::placeholder {
+                                color: parciales.$boxbackground;
+                                font-size: 1.4rem;
+                            }
+                        }
+                        button{
+                            margin-top: 1rem;
+                            margin-bottom: 0.25rem;
+                            border-style: none;
+                            
+                            width: 85%;
+                            background-color: parciales.$primario;
+                            color: parciales.$secundario;
+                            font-weight: bold;                            
+                            border-radius: 1rem;  
+                            cursor: pointer;
+                            font-size: 1.4rem;
+                            padding: 1.5rem 3rem;
+                        }
+                    }
+                    p {
+                        color: parciales.$primario; 
+                        padding-left: 1rem;
+                        padding-right: 1rem;  
+                        font-weight: normal;
+                        font-size: 1.6rem;                    
                     }
                 } 
-                li{
-                    margin-top: 0.5rem;
-                    margin-bottom: 0.5rem;
-                    list-style: none
+                .bloque_dsc {
+                    display: flex;
+                    flex-direction: column;            
+                    justify-content:center;
+                    align-items: center;
+                    h3{
+                        color: white;
+                        font-size: 2rem;
+                    }
+                    div {
+                        width: 20rem;
+                        display: block;
+                        border: parciales.$secundario solid 1.5px;
+                        border-radius: 1.5rem; 
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        color:parciales.$secundario;
+                        h4 {                            
+                            text-align: center;
+                            font-size: large;
+                            margin-bottom: 0;
+                        }
+                        p {                           
+                            text-align: center;
+                            font-size: medium;
+                            margin-top: 10px;
+                        }
+                    }
                 }           
             }
+
+            .simbolos{ 
+                img{                                  
+                    @include parciales.keyframes(bubble){
+                        0%{
+                            transform: translateY(0);
+                            opacity: 0;
+                            filter: drop-shadow(0 0 5px #58A690);
+                        }
+                    25%{
+                            opacity: 1;
+                            filter: drop-shadow(0 0 10px hsl(163, 75%, 50%));
+                        }
+                    75%{
+                            opacity: 1;
+                            filter: drop-shadow(0 0 15px hsl(163, 75%, 50%));
+                        }
+                    100%{
+                            transform: translateY(120vh);
+                            opacity: 0;
+                            filter: drop-shadow(0 0 20px hsl(163, 75%, 50%));
+                        }
+                    }
+                }
+            }
+        }
+
+        footer { 
+            margin-top: 35px;
+            flex-direction: row;
+            justify-content:space-evenly;
+            font-size: 1.2rem;    
         }
     }
 }
