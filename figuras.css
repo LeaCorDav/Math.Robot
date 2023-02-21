@@ -256,8 +256,8 @@ body footer ul li {
     width: 380px;
   }
   body main .container_formas .bloqueforma .icono_figura {
-    height: 85px;
-    width: 85px;
+    height: 75px;
+    width: 75px;
     align-self: center;
   }
   body main .container_formas .bloqueforma h3 {
@@ -306,7 +306,7 @@ body footer ul li {
     font-size: 1.2rem;
   }
 }
-@media (min-width: 1079px) {
+@media (min-width: 840px) {
   body {
     /* footer { 
         margin-top: 35px;
@@ -337,13 +337,13 @@ body footer ul li {
   body main .container_formas {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 85%;
   }
   body main .container_formas .bloqueforma {
-    margin: 5rem 0;
-    width: 400px;
+    margin: 5rem 1.5rem;
+    width: 38rem;
     height: 750px;
   }
   @keyframes bubble {
